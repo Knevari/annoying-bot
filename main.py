@@ -8,7 +8,7 @@ from selenium.webdriver.common.by import By
 from timeloop import Timeloop
 from selenium import webdriver
 from datetime import timedelta
-from trainer import bot
+# from trainer import bot
 
 
 class AnnoyingBuzzrBot:
@@ -41,10 +41,10 @@ class AnnoyingBuzzrBot:
 
                 try:
                     print("User Message:", text)
-                    response = bot.get_response(text)
+                    # response = bot.get_response(text)
 
                     self.chat.clear()
-                    self.chat.send_keys(response)
+                    self.chat.send_keys(text[::-1])
                     self.send.click()
                 except:
                     continue
