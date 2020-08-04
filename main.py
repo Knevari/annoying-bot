@@ -81,6 +81,6 @@ class AnnoyingBuzzrBot:
         self.tl.start(block=False)
 
 
-if __name__ == "__main":
+if __name__ == "__main__":
     bot = AnnoyingBuzzrBot()
     bot.run()
